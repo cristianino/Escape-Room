@@ -25,6 +25,10 @@ export function CreateRoom0() : void{
             isDoorOpen = true
             doorAnimator.getClip("Door_Open").play()
             door.getComponent(AudioSource).playOnce()
+        } else {
+            isDoorOpen = false
+            doorAnimator.getClip("Door_Close").play()
+            door.getComponent(AudioSource).playOnce()
         }
     }))
 
