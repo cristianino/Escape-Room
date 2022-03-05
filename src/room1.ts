@@ -37,7 +37,7 @@ export function CreateRoom1() : void{
     button.addComponent(new GLTFShape("models/room1/Square_Button.glb"))
 
     //add transform and set position
-    button.addComponent(new Transform({position: new Vector3(26.3714,6.9,26.8936)}))
+    button.addComponent(new Transform({position: new Vector3(26.3714,6.93,26.8936)}))
 
     //add audio source to button
     button.addComponent(new AudioSource(new AudioClip("sounds/button.mp3")))
@@ -52,7 +52,7 @@ export function CreateRoom1() : void{
     button.addComponent(buttonAnimator)
 
     //create entity that will contain the countdown
-    let countDownDisplayer = new Entity()
+    let countDownDisplayer = new Entity() 
 
     //add mesh to the displayer
     countDownDisplayer.addComponent(new GLTFShape("models/room1/Puzzle02_ButtomScreen.glb"))
@@ -67,7 +67,7 @@ export function CreateRoom1() : void{
     countdown.setParent(countDownDisplayer)
 
     //add transform and set position
-    countdown.addComponent(new Transform({position: new Vector3(0,0,0.1), rotation: Quaternion.Euler(20,180,0) }))
+    countdown.addComponent(new Transform({position: new Vector3(0,0,0.1), rotation: Quaternion.Euler(-20,180,0) }))
 
     //create text shape for countdown
     let countdownTextShape = new TextShape(formatCountdownString(openDoorTime))

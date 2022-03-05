@@ -4,8 +4,8 @@
     "favicon": "favicon_asset"
   },
   "contact": {
-    "name": "author-name",
-    "email": ""
+    "name": "Cristian Niño",
+    "email": "cristiandavid113@gmail.com"
   },
   "owner": "",
   "scene": {
@@ -13,7 +13,22 @@
       "0,0","1,0","0,1","1,1","1,2","0,2","2,0","2,1","2,2"
     ],
     "base": "0,0"
-  },
+  }, "spawnPoints": [
+    {
+      "name": "room 1",
+      "default": true,
+      "position": {
+        "x": 25.58,
+        "y": 6.38,
+        "z": 28.26
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 1,
+        "z": 8
+      }
+    }
+  ],
   "communications": {
     "type": "webrtc",
     "signalling": "https://signalling-01.decentraland.org"
