@@ -15,8 +15,22 @@
     "base": "0,0"
   }, "spawnPoints": [
     {
-      "name": "room 1",
+      "name": "start",
       "default": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 1,
+        "z": 8
+      }
+    },
+    {
+      "name": "room 1",
+      "default": false,
       "position": {
         "x": 25.58,
         "y": 6.38,

@@ -76,7 +76,7 @@ export function CreateRoom1() : void{
     countdown.addComponent(countdownTextShape)
 
     //listen for click event to toggle door state
-    button.addComponent(new OnClick(event =>{
+    button.addComponent(new OnPointerDown(event =>{
         //check if timer is running
         if (!countDownDisplayer.hasComponent(utils.Interval)){
             //set countdown
